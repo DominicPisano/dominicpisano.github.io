@@ -123,7 +123,7 @@ div.project {
 @media (max-width: 1415px) {
     #leftPanel {
         width: 100%;
-        height: 60vh;
+        height: 70vh;
         position: relative;
         box-shadow: none;
     }
