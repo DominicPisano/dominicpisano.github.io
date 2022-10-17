@@ -1,35 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #131316;
-    color: #ffffff;
     font-family: 'Varela Round', sans-serif;
     padding: 0;
     margin: 0;
+    font-size: 18px;
+}
+
+div {
+    display: grid;
+    float: right;
+    place-items: center;
+    align-content: center;
+}
+
+#leftPanel {
+    width: 30%;
+    background-color: #222831;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    box-shadow: 10px 0px 60px black;
+    z-index: 1;
+}
+
+#leftPanel a {
+    color: #EEEEEE;
+    text-decoration: none;
 }
 
 #profilePicture {
     border-radius: 50%;
     max-height: 300px;
+    border: 10px solid #00ADB5;
+
 }
 
-section {
-    display: grid;
+.links {
+    display: table;
+    margin-bottom: 15px;
+}
+
+.button {
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    background: #00ADB5;
+    padding: 10px;
+    margin: 5px;
+    text-align: right;
+}
+
+.buttonSocial {
+    border-radius: 50%;
+    text-align: center;
+    color: #EEEEEE;
+    background: #00ADB5;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.fa {
+    display: table !important;
+    font-size: 30px !important;
+    float: left !important;
+}
+
+#rightPanel {
+    width: 70%;
+    color: #D8D8D8;
+    background-image: linear-gradient(to right,#393E46, #393E46);
+}
+
+.contentPanel {
+    border-radius: 25px;
+    background: #222831;
+    padding: 20px;
+    width: 50vw;
+}
+
+
+div.project {
+    text-align: center;
+    display: inline;
+    float: left;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    padding: 20px;
+    width: 50vw;
+    border-radius: 25px;
+    background: #222831;
+}
+
+.project img {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.project p {
+    text-align: justify;
+    margin: 10px;
 }
 
 .hidden {
     opacity: 0;
-    transform: translateX(-100vh);
+    transform: translateX(-50vh);
     transition: all 1s;
-}
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
 }
 
 .show {
