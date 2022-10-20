@@ -11,8 +11,12 @@ body {
     font-size: 18px;
 }
 
-h1 {
+#rightPanel h1 {
     margin: 25px 0px 10px 0px;
+}
+
+#leftPanel h1 {
+    margin: 0px 0px 15px 0px;
 }
 
 h2 {
@@ -42,9 +46,9 @@ div {
 #leftPanel a {
     color: #EEEEEE;
     text-decoration: none;
-    line-height: 1.7;
     text-align: center;
     justify-content: center;
+    place-items: center;
 }
 
 #profilePicture {
@@ -62,17 +66,17 @@ div {
 
 .button, .contentPanel a {
     color: #EEEEEE;
-    border-radius: 50px;
+    border-radius: 25px;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
     background: #00ADB5;
-    padding: 10px;
+    padding: 7px;
     margin: 5px;
 }
 
 .buttonSocial {
-    border-radius: 100px;
+    border-radius: 25px;
     text-align: center;
     color: #EEEEEE;
     background: #00ADB5;
@@ -83,9 +87,8 @@ div {
 }
 
 .fa {
-    display: table !important;
-    font-size: 30px !important;
-    float: left !important;
+    display: flex !important;
+    font-size: 32px !important;
 }
 
 #rightPanel {
@@ -136,7 +139,7 @@ div {
     transform: translateX(0);
 }
 
-@media (max-width: 1245px) {
+@media (max-width: 1175px) {
     #leftPanel {
         width: 100%;
         height: 75vh;
