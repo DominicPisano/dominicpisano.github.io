@@ -107,24 +107,17 @@ div {
     display: grid;
     place-items: center;
     align-content: center;
+    text-align: justify;
 }
 
-.project {
-    display: inline;
-    float: left;
-    place-items: center;
-    align-content: center;
-}
+
 
 .project img {
-    float: left;
-    width: 300px;
-    height: auto;
-    margin: 10px;
+    width: auto;
+    height: 450px;
 }
 
 .project p {
-    text-align: justify;
     margin: 10px;
 }
 
@@ -139,7 +132,7 @@ div {
     transform: translateX(0);
 }
 
-@media (max-width: 1175px) {
+@media (max-width: 1400px) {
     #leftPanel {
         width: 100%;
         height: 75vh;
@@ -175,12 +168,9 @@ div {
         width: 80%;
     }
 
-    .project {
-        width: 80%;
-    }
-    
     .project img {
-        width: 175px;
+        width: 375px;
+        height: auto;
     }
 
     .hidden {
