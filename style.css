@@ -54,7 +54,7 @@ div {
 #profilePicture {
     border-radius: 50%;
     max-height: 300px;
-    border: 10px solid #00ADB5;
+    border: 10px solid #234099;
     margin-bottom: 15px;
 }
 
@@ -70,7 +70,7 @@ div {
     text-decoration: none;
     font-size: 20px;
     text-align: center;
-    background: #00ADB5;
+    background: #234099;
     padding: 7px;
     margin: 5px;
 }
@@ -79,7 +79,7 @@ div {
     border-radius: 25px;
     text-align: center;
     color: #EEEEEE;
-    background: #00ADB5;
+    background: #234099;
     text-decoration: none;
     margin: 5px;
     width: 50px;
@@ -93,7 +93,7 @@ div {
 
 #rightPanel {
     width: 65%;
-    color: #D8D8D8;
+    color: #EEEEEE;
     background: #393E46;
 }
 
@@ -113,8 +113,8 @@ div {
 
 
 .project img {
-    width: auto;
-    height: 450px;
+    width: 100%;
+    height: auto;
 }
 
 .project p {
@@ -132,7 +132,7 @@ div {
     transform: translateX(0);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1250px) {
     #leftPanel {
         width: 100%;
         height: 75vh;
@@ -161,16 +161,10 @@ div {
         height: 100%;
         display: grid;
         position: relative;
-
     }
 
     .contentPanel {
         width: 80%;
-    }
-
-    .project img {
-        width: 375px;
-        height: auto;
     }
 
     .hidden {
