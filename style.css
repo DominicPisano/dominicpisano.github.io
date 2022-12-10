@@ -8,7 +8,7 @@ body {
     font-family: 'Varela Round', sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #rightPanel h1 {
@@ -110,7 +110,13 @@ div {
     text-align: justify;
 }
 
+.education {
+    justify-items: stretch;
+}
 
+ul {
+    margin: 0;
+}
 
 .project img {
     width: 100%;
@@ -130,6 +136,13 @@ div {
 .show {
     opacity: 1;
     transform: translateX(0);
+}
+
+make list left aligned
+ul {
+    float: left;
+    align-items: left;
+    align-content: left;
 }
 
 @media (max-width: 1250px) {
